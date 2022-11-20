@@ -8,7 +8,7 @@ function App() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-    const url ='http://localhost:8080/fizz-buzz?number='+name;
+    const url ='https://backend-dot-oneiocloud.uc.r.appspot.com/fizz-buzz?number='+name;
       fetch(url)
         .then(function(response) {
           return response.text();
